@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - ShiftxMedia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1E2A38;
+            color: #F5F5F5;
+            text-align: center;
+        }
+        header {
+            background-color: #C0A36E;
+            padding: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .container {
+            width: 50%;
+            margin: auto;
+            padding: 50px 0;
+        }
+        .contact-form {
+            background-color: #2D2D2D;
+            padding: 30px;
+            border-radius: 10px;
+        }
+        .contact-form input, .contact-form textarea, .contact-form button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        .contact-form input {
+            background-color: #F5F5F5;
+            color: #1E2A38;
+        }
+        .contact-form button {
+            background-color: #B08D57;
+            color: #1E2A38;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #2D2D2D;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>Contact ShiftxMedia</header>
+    
+    <div class="container">
+        <form class="contact-form">
+            <h2>Get in Touch</h2>
+            <input type="text" name="first_name" placeholder="First Name" required>
+            <input type="text" name="last_name" placeholder="Last Name" required>
+            <input type="tel" name="phone" placeholder="Phone (Egypt Only)" pattern="^\+?20[0-9]{9}$" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Your Message (Optional)"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 ShiftxMedia | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
