@@ -4,84 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ShiftxMedia | Automotive Marketing Experts</title>
-    <style>
-        body {
-            font-family: 'Montserrat', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #1E2A38;
-            color: #F5F5F5;
-            text-align: center;
-        }
-        header {
-            background-color: #C0A36E;
-            padding: 20px;
-            font-size: 24px;
-            font-weight: bold;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            padding: 50px 0;
-        }
-        .cta-button {
-            background-color: #B08D57;
-            color: #1E2A38;
-            padding: 15px 30px;
-            text-decoration: none;
-            font-weight: bold;
-            border-radius: 5px;
-            font-size: 18px;
-            display: inline-block;
-            margin-top: 20px;
-        }
-        .services {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 40px;
-        }
-        .service-box {
-            background-color: #2D2D2D;
-            padding: 20px;
-            border-radius: 10px;
-            width: 30%;
-        }
-        footer {
-            background-color: #2D2D2D;
-            padding: 20px;
-            margin-top: 50px;
-        }
-        .logo {
-            width: 150px;
-            display: block;
-            margin: 20px auto;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>ShiftxMedia | Accelerating Automotive Brands</header>
-    <img src="ShiftxMedia.png" alt="ShiftxMedia Logo" class="logo">
-    <div class="container">
-        <h1>Fueling Your Auto Business with Digital Marketing</h1>
-        <p>We manage social media for dealerships, film protection installers, and more!</p>
-        <a href="#contact" class="cta-button">Get Started</a>
-        <div class="services">
-            <div class="service-box">
-                <h2>Social Media Management</h2>
-                <p>We create and manage content that engages and converts.</p>
-            </div>
-            <div class="service-box">
-                <h2>Paid Advertising</h2>
-                <p>Boost your brand with targeted automotive ads.</p>
-            </div>
-            <div class="service-box">
-                <h2>Brand Growth</h2>
-                <p>We help auto businesses stand out online.</p>
-            </div>
+    <header>
+        <div class="logo-container">
+            <img src="ShiftxMedia.png" alt="ShiftxMedia Logo">
+            <h1>ShiftxMedia</h1>
         </div>
-    </div>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <img src="car_image.jpg" alt="Luxury Car">
+        <div class="hero-text">
+            <h2>Accelerating Automotive Brands</h2>
+            <p>Your trusted automotive marketing agency.</p>
+            <a href="#contact" class="cta-button">Get Started</a>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-list">
+            <div class="service-item">Social Media Management</div>
+            <div class="service-item">Paid Advertising</div>
+            <div class="service-item">Content Creation & Video Production</div>
+            <div class="service-item">Website Growth & SEO</div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>Who Are We?</h2>
+        <p>Based in 📍Egypt, we specialize in growing automotive brands through data-driven marketing, compelling content, and industry expertise.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="First Name" required>
+            <input type="text" placeholder="Last Name" required>
+            <input type="tel" placeholder="Phone (Egypt Only)" pattern="^\+20[0-9]{9}$" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Your Message (Optional)"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
     <footer>
-        <img src="ShiftxMedia.png" alt="ShiftxMedia Logo" class="logo">
         <p>© 2025 ShiftxMedia | All Rights Reserved</p>
     </footer>
 </body>
